@@ -21,7 +21,7 @@
 .col12{width: 1180px}
 
 .row{margin-bottom: 24px;}
-.row::after{content: '';display: block;clear: both;}
+.row::after{/* content: ''; */display: block;clear: both;}
 
 .row1{height: 24px;}
 .row2{height: 48px;}
