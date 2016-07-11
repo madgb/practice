@@ -68,7 +68,7 @@ body{
 
 .box_right{
 	float: right;
-		width: 14.0625rem;
+	width: 14.0625rem;
 	height: 14.4375rem;
 }
 
@@ -140,4 +140,59 @@ body{
 	font-weight: 500%;
 }
 
+.box1:hover::after{
+	content: '';
+	display: block;
+	border-left: none;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	border-right: 25px solid #fff1e2;
+	position: relative;
+	left: -100%;
+	top: -22%;
+}
+.box2:hover::after{
+	content: '';
+	display: block;
+	border-left: none;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	border-right: 25px solid #ffffff;
+	position: relative;
+	left: -100%;
+	top: -22%;
+}
+.box3:hover::after{
+	content: '';
+	display: block;
+	border-left: none;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	border-right: 25px solid #ffffff;
+	position: relative;
+	left: -100%;
+	top: -22%;
+}
+.box4:hover::after{
+	content: '';
+	display: block;
+	border-right: none;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	border-left: 25px solid #ffffff;
+	position: relative;
+	left: 100%;
+	top: -22%;
+}
+.box5:hover::after{
+	content: '';
+	display: block;
+	border-right: none;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	border-left: 25px solid #ffffff;
+	position: relative;
+	left: 100%;
+	top: -22%;
+}
 
