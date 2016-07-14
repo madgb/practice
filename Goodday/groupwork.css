@@ -23,8 +23,13 @@ body {
 	text-align: center;
 	box-shadow: 18px 10px 28px -6px rgba(0,0,0,0.45);
 	background: linear-gradient(to bottom, #FFFFFF 40%, #F0F0F0 60%, #F0F0F0 80%, #D4D4D4 100%);
-	animation: BB 3s ease-in-out;
-	transform-origin: left top;
+	animation: BB 2s ease-in-out,
+			   CC 3s 2s ease-in-out,
+			   DD 5s 5s ease,
+			   EE 5s 10s ease,
+			   FF 5s 15s ease
+			   ;
+	transform-origin: left top,left top,left top,left top,center center;
 
 }
 
@@ -40,9 +45,6 @@ body {
 	}
 }
 
-#poster{
-	animation: CC 3s infinite 3s alternate ease-in-out;
-}
 
 @keyFrames CC{
 	0%{
@@ -55,9 +57,6 @@ body {
 		transform: rotate(20deg);
 	}
 }
-#poster{
-	animation: DD 3s 15s ease-in-out;
-}
 
 @keyFrames DD{
 	0%{
@@ -69,6 +68,44 @@ body {
 	100%{
 		transform: rotate(0deg) translateY(90rem);
 	}
+}
+@keyFrames EE{
+	0%{
+		transform: rotate(-180deg) translateY(0);
+	}
+	50%{
+		transform: rotate(0deg) translateY(-10rem);
+	}
+	100%{
+		transform: rotate(0deg) translateY(-90rem);
+	}
+}
+@keyFrames EE{
+	0%{
+		transform: rotate(-180deg) translateY(0);
+	}
+	15%{
+		transform: rotate(-240deg) translateY(0rem);
+	}
+	30%{
+		transform: rotate(-360deg) translateY(0rem);
+	}
+	45%{
+		transform: rotate(100deg) translateY(0rem);
+	}
+	60%{
+		transform: rotate(200deg) translateY(0rem);
+	}
+	80%{
+		transform: rotate($γ) translateY(0rem);
+	}
+	100%{
+		transform: rotate(0deg) translateY(0rem);
+	}
+
+
+
+
 }
 
 .font::after{
