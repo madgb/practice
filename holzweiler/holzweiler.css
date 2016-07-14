@@ -92,6 +92,7 @@ body li{list-style: none;}
 	position: relative;
     top: 78%;
     left: 16%;
+    z-index: -1;
 
 }
 
