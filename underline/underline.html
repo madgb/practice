@@ -22,7 +22,14 @@ html, body {
   justify-content: center;
 }
 
-body {
+h1{
+	position: absolute;
+	display: inline-block;
+    top: 16%;
+    left: 22%;
+}
+
+body{
   border: 8px solid #3E7D3C;
   width: 60%;
   height: 40%;
@@ -75,6 +82,15 @@ p {
       height: 100%;
 }
 
+.link-1:active::after{
+	height: 100%;
+ 	animation: blow 3s ease;
+ }
+
+ .link-1:active{
+ 	color: #9885FF;
+ }
+
 .link-2 {
   position: relative;
   text-decoration: none;
@@ -95,23 +111,70 @@ p {
     bottom: 0;
     transition: width ease 0.4s;
   }
+
 .link-2:hover{
-	color: black;
+	color: #000000;
 }  
   
   .link-2:hover::before {
     width: 100%;
     left: 0;
     bottom: 0;
-    transition: all ease 0.6s;
   }
+.link-2:active{
+
+	color: #9885FF;
+}
+
+
+ .link-2:active::before{
+ 	animation: blow 3s ease;
+ }
+
+ @keyframes blow{
+ 	0%{
+ 		transform: translateX(0) rotate(0);
+
+ 	}
+ 	10%{
+ 		transform: translateX(-10%);
+ 	}
+ 	50%{
+ 		transform: translateX(2000%) rotate(-90deg);
+ 	}
+ 	100%{
+ 		transform: translateX(0%) rotate(0deg);
+ 	}
+ }
+
+ span{
+ 	color: #E55C85;
+ 	cursor: pointer;
+ 	display: inline-block;
+ }
+
+ span:active{
+    opacity: 0.5;
+    animation: spin 0.5s ease;
+    animation-fill-mode: forwards;
+ }
+
+@keyframes spin{
+	0%{transform: rotate(0);}
+	100%{transform: rotate(-15deg);}
+}
+
 
 	</style>
 </head>
 <body>
+<h1>Hover and <span>Click</span></h1>
+
+<div class="wrapper">
 	<p>
-  Giving money and power to government <a class="link-1" href="#">creatively</a> is like giving <a class="link-2">people</a> whiskey and car keys to teenage boys. 
-  <strong>-P. J. O'Rourke</strong>
+	  Giving money and power to government <a class="link-1" href="#">creatively</a> is like giving <a class="link-2">people</a> whiskey and car keys to teenage boys. 
+	  <strong>-P. J. O'Rourke</strong>
+</div>
 </p>
 </body>
 </html>
