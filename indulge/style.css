@@ -1,0 +1,144 @@
+body{
+	list-style: none;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.wrapper{
+	background-color: #003853;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(images/sea.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header{
+	padding-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.logo{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+h1{
+	display: block;
+	background: url(images/indulge.png) no-repeat center;
+	width: 100%;
+	height: 100%;
+	text-indent: 90000000%;
+	padding-bottom: 10px;
+}
+
+/*네비게이션 메뉴*/
+[class*=nav]{
+	color: #FFFFFF;
+	font-size: 1.2em;
+}
+
+.nav_gb{
+	width: 48%;
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 1em;
+}
+
+.nav_gb>li {
+	margin-left: 1em;
+	margin-top: 4em;
+	display: block;
+
+}
+
+.nav_sub{
+	width: 48%;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 1em;
+}
+
+.nav_sub>li {
+	margin-right: 1em;
+	margin-top: 4em;
+	display: block;
+
+}
+
+.main{
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+[class*=disk]{
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+.disk1{
+	background-image: url(images/Photo-01.png);
+}
+.disk2{
+	background-image: url(images/Photo-02.png);
+}
+.disk3{
+	background-image: url(images/Photo-03.png);
+}
+.disk4{
+	background-image: url(images/Photo-04.png);
+}
+.disk5{
+	background-image: url(images/Photo-05.png);
+}
+.disk6{
+	background-image: url(images/Photo-06.png);
+}
+.disk7{
+	background-image: url(images/Photo-07.png);
+}
+.disk8{
+	background-image: url(images/Photo-08.png);
+}
+.disk9{
+	background-image: url(images/Photo-09.png);
+}
+.disk10{
+	background-image: url(images/Photo-10.png);
+}
+.disk11{
+	background-image: url(images/Photo-12.png);
+}
+.disk12{
+	background-image: url(images/Photo-12.png);
+}
+.disk13{
+	background-image: url(images/Photo-13.png);
+}
+.disk14{
+	background-image: url(images/Photo-14.png);
+}
+.disk15{
+	background-image: url(images/Photo-15.png);
+}
+.disk16{
+	background-image: url(images/Photo-16.png);
+}
+
+
+
+
+
+
+@media screen and max-width: 375px {
+	header
+}
