@@ -1,144 +1,150 @@
-body{
-	list-style: none;
-	box-sizing: border-box;
+body {
+	background:#003652 url("images/sea.png") no-repeat top center;
+	background-size:800px;
 }
 
-a{
-	text-decoration: none;
-	color: #FFFFFF;
+.header {
+	min-height:800px;
+	text-align:center;
 }
 
-.wrapper{
-	background-color: #003853;
-	width: 100vw;
-	height: 100vh;
-	background-image: url(images/sea.png);
-	background-repeat: no-repeat;
+.header * {vertical-align:middle;}
+.header h1 {
+	margin: 0 18px 33px 18px;
+	padding: 80px 0 58px 0;
+	border-bottom: 1px solid #737680;
+}
+
+.header-logo {
+    width:178px;
+    height:51px;
+    background:url("images/indulge.png") no-repeat;
+    background-size:cover;
+}
+
+.header_btn_wrap {display:inline-block;}
+
+.header-category-btn {
+    width:33px;
+    height:25px;
+    background:url("images/icon-hamberger.png") no-repeat;
+}
+
+.header-search {
+	position:relative;
+    width:35px;
+    height:35px;
+    background:url("images/icon-search.png") no-repeat;
+}
+
+.header-search input[type="text"]::-webkit-input-placeholder {
+	color:#fff;
+}
+
+.header-search input[type="submit"] {
+	position: absolute;
+    top: -1000px;
+}
+
+.header-checkout-btn {
+    width:42px;
+    height:32px;
+    background:url("images/icon-card.png") no-repeat;
+}
+
+.header-btn {
+	display:inline-block;
+	margin:0 30px;
+	background-size:100%;
+	text-indent: -9999px;
+}
+
+.header-category {
+	position:fixed;
+	left:-300px;
+	width:300px;
+}
+
+.hero-text {
+	max-width:540px;
+	margin:180px auto 0 auto;
+	text-align:center;
+}
+.hero-text h2 {
+	margin-bottom:21px;
+	padding:0 18px;
+	font-size:27px;
+	line-height:1.5;
+	letter-spacing:-1px;	
+}
+
+.hero-text h2 strong {
+	display:block;
+	font-size:32px;
+	font-weight:100;
+}
+
+.hero-text-btn {
+	position: relative;
+	display:inline-block;
+	padding:12px 30px;
+	font-size:18px;
+	font-weight:900;
+	overflow: hidden;
+	transition: all 0.2s;
+}
+
+.hero-text-btn:before {
+	content: '';
+    border-right: none;
+    border-left: 13px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+.hero-text-btn>p{
+	position: relative;
+    right: -7px;
+}
+
+.hero-text-btn:hover:before {
+	width:0;
+	margin:0;
+}
+
+.hero-text-btn:hover:after {
+	left:0;
+}
+
+.footer {
+	padding:50px;
+	background:#141728;
+	text-align: center;
+}
+
+.footer-logo {
+	width:142px;
+	height:41px;
+	margin-bottom:50px;
+	background-image: url("images/indulge.png");
 	background-size: cover;
 }
 
-.header{
-	padding-top: 100px;
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
+.sns_link {
+	width:100%;
+	margin-bottom:50px;
 }
 
-.logo{
-	width: 100%;
-	height: 100%;
-	display: flex;
+.sns_link li {
+	float:left;
+	width:33.33%;
+	font-size:38px;
 }
 
-h1{
-	display: block;
-	background: url(images/indulge.png) no-repeat center;
-	width: 100%;
-	height: 100%;
-	text-indent: 90000000%;
-	padding-bottom: 10px;
-}
-
-/*네비게이션 메뉴*/
-[class*=nav]{
-	color: #FFFFFF;
-	font-size: 1.2em;
-}
-
-.nav_gb{
-	width: 48%;
-	display: flex;
-	justify-content: flex-start;
-	margin-left: 1em;
-}
-
-.nav_gb>li {
-	margin-left: 1em;
-	margin-top: 4em;
-	display: block;
-
-}
-
-.nav_sub{
-	width: 48%;
-	display: flex;
-	justify-content: flex-end;
-	margin-right: 1em;
-}
-
-.nav_sub>li {
-	margin-right: 1em;
-	margin-top: 4em;
-	display: block;
-
-}
-
-.main{
-	justify-content: center;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-[class*=disk]{
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-}
-.disk1{
-	background-image: url(images/Photo-01.png);
-}
-.disk2{
-	background-image: url(images/Photo-02.png);
-}
-.disk3{
-	background-image: url(images/Photo-03.png);
-}
-.disk4{
-	background-image: url(images/Photo-04.png);
-}
-.disk5{
-	background-image: url(images/Photo-05.png);
-}
-.disk6{
-	background-image: url(images/Photo-06.png);
-}
-.disk7{
-	background-image: url(images/Photo-07.png);
-}
-.disk8{
-	background-image: url(images/Photo-08.png);
-}
-.disk9{
-	background-image: url(images/Photo-09.png);
-}
-.disk10{
-	background-image: url(images/Photo-10.png);
-}
-.disk11{
-	background-image: url(images/Photo-12.png);
-}
-.disk12{
-	background-image: url(images/Photo-12.png);
-}
-.disk13{
-	background-image: url(images/Photo-13.png);
-}
-.disk14{
-	background-image: url(images/Photo-14.png);
-}
-.disk15{
-	background-image: url(images/Photo-15.png);
-}
-.disk16{
-	background-image: url(images/Photo-16.png);
-}
-
-
-
-
-
-
-@media screen and max-width: 375px {
-	header
+.etc-list li {
+	margin-bottom:25px;
+	text-align:left;
+	font-size:18px;
 }
