@@ -57,6 +57,7 @@ body {
 	margin:0 30px;
 	background-size:100%;
 	text-indent: -9999px;
+	cursor: pointer;
 }
 
 .header-category {
@@ -131,6 +132,12 @@ body {
 	background-image: url("images/indulge.png");
 	background-size: cover;
 }
+.sns_link span{
+	transition: all 0.2s ease;
+}
+.sns_link span:hover{
+	transform: scale(1.2);
+}
 
 .sns_link {
 	width:100%;
@@ -147,4 +154,16 @@ body {
 	margin-bottom:25px;
 	text-align:left;
 	font-size:18px;
+	position: relative;
+	overflow: hidden;
+}
+
+.etc-list a{
+	border-bottom: 1px solid transparent;
+	transition: all 0.4s ease;
+
+}
+
+.etc-list a:hover{
+	border-bottom: 1px solid;
 }
