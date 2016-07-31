@@ -4,6 +4,7 @@
 body
 	color: #000000
 	background: url(../../images/backbone.png)
+	height: 100%
 
 .header
 	width: 100%
@@ -194,8 +195,7 @@ body
 
 %article_type
 	display: flex
-	width: 315px
-	height: 217px
+	height: 230px
 	border: 1px solid white
 	border-top-left-radius: 10px
 	border-top-right-radius: 10px
@@ -228,6 +228,19 @@ body
 	.second, .third
 		box-shadow: none
 
+@media screen and (min-width: 400px) and (max-width: 900px)
+	.main_article, .sub_articles [class*="sub"]
+		width: 95%
+
+@media screen and (min-width: 901px) and (max-width: 1100px)
+	.main_article, .sub_articles [class*="sub"]
+		width: 30%
+
+@media screen and (min-width: 1101px) and (max-width: 2000px)
+	.main_article, .sub_articles [class*="sub"]
+		width: 320px
+
+
 .food_picture1
 	@extend %picture_type
 	background: url(../../images/article_picture1.png) no-repeat center
@@ -240,5 +253,50 @@ body
 	@extend %picture_type
 	background: url(../../images/article_picture3.png) no-repeat bottom
 
+//서브 아티클 시작
+.sub_title
+	background: url(../../images/wood_bg.png)
+	width: 100%
+	height: 100px
+	@extend %center
+	flex-flow: wrap column-reverse
+	margin-top: 20px
+	&::after
+		content: ''
+		width: 60px
+		height: 50px
+		background: url(../../images/ribbon.png) no-repeat top
+			size: cover
+		position: relative
+		top: -22px
+	& h3
+		color: #9a5f34
+		font-size: 25px
+
+.sub_articles
+	background: url(../../images/wood_bg.png)
+	width: 100%
+	@extend %center
+	& [class*="article"]
+		color: #9a5f34
+		height: 170px
+		border: 1px solid #9a5f34
+			radius: 10px
+		margin: 15px
+		@extend %center
+		flex-flow: wrap column
+		& :first-child
+			font-size: 20px
+			margin-bottom: 27px
+
+.footer_intro
+	width: 100%
+	height: 240px
+	background: url(../../images/bottom_bg.png) no-repeat center
+		size: cover
+.footer_info
+	width: 100%
+	height: 120px
+	background-color: #4a5e76
 
 
