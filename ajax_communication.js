@@ -67,13 +67,13 @@
 
   if (page1.onclick){
     xhr.open('GET', 'data/page1.html');
-    updateViewPlace;
+    return updateViewPlace;
   } else if (page2.onclick) {
     xhr.open('GET', 'data/page2.html');
-    updateViewPlace;
+    return updateViewPlace;
   } else if (page3.onclick) {
     xhr.open('GET', 'data/page3.html');
-    updateViewPlace;
+    return updateViewPlace;
   }
 
   // xhr.open('GET', 'data/data.txt', true); // 비동기 통신
