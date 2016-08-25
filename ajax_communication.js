@@ -37,7 +37,6 @@
   var page1 = document.querySelector('.page1')
   var page2 = document.querySelector('.page2')
   var page3 = document.querySelector('.page3')
-  call_ajax_btn.onclick = updateViewPlace;
 
   // 통신 상태 확인
   // if ( xhr.status === 200 ) {
@@ -52,18 +51,20 @@
   var pageOnclick = page1.onclick 
   switch (pageOnclick) {
     case "page1.onclick":
-      xhr.open('GET', 'data/data.html');
-      return updateViewPlace;
+      xhr.open('GET', 'data/page1.html');
       break;
     case "page2.onclick":
       xhr.open('GET', 'data/page2.html');
-      return updateViewPlace;
       break;
     case "page3.onclick":
       xhr.open('GET', 'data/page3.html');
-      return updateViewPlace;
       break;
   }
+
+  page1.onclick = updateViewPlace;
+  page2.onclick = updateViewPlace;
+  page3.onclick = updateViewPlace;
+  
   // xhr.open('GET', 'data/data.txt', true); // 비동기 통신
   // xhr.open('GET', 'data/data.html'); // 비동기 통신
   // xhr.open('GET', 'data/model.txt', false); // 동기 통신
