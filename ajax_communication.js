@@ -48,20 +48,20 @@
   //   result_view.textContent = '데이터 로드에 실패했습니다....';
   //   console.log(xhr);
   // }
-  page1.onclick = updateViewPlace;
-  page2.onclick = updateViewPlace;
-  page3.onclick = updateViewPlace;
-  
-  var pageOnclick = page1.onclick 
+
+  var pageOnclick = page1.onclick = updateViewPlace;
   switch (pageOnclick) {
     case "page1.onclick":
       xhr.open('GET', 'data/page1.html');
+      updateViewPlace;
       break;
     case "page2.onclick":
       xhr.open('GET', 'data/page2.html');
+      updateViewPlace;
       break;
     case "page3.onclick":
       xhr.open('GET', 'data/page3.html');
+      updateViewPlace;
       break;
   }
 
