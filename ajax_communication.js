@@ -53,20 +53,31 @@
   var page2.onclick = page2ed
   var page3.onclick = page3ed
 
-  var pageOnclick
-  switch (pageOnclick) {
-    case "page1ed":
-      xhr.open('GET', 'data/page1.html');
-      updateViewPlace;
-      break;
-    case "page2ed":
-      xhr.open('GET', 'data/page2.html');
-      updateViewPlace;
-      break;
-    case "page3ed":
-      xhr.open('GET', 'data/page3.html');
-      updateViewPlace;
-      break;
+  // var pageOnclick = 
+  // switch (pageOnclick) {
+  //   case "page1ed":
+  //     xhr.open('GET', 'data/page1.html');
+  //     updateViewPlace;
+  //     break;
+  //   case "page2ed":
+  //     xhr.open('GET', 'data/page2.html');
+  //     updateViewPlace;
+  //     break;
+  //   case "page3ed":
+  //     xhr.open('GET', 'data/page3.html');
+  //     updateViewPlace;
+  //     break;
+  // }
+
+  if (page1ed){
+    xhr.open('GET', 'data/page1.html');
+    updateViewPlace;
+  } else if (page2ed) {
+    xhr.open('GET', 'data/page2.html');
+    updateViewPlace;
+  } else if (page3ed) {
+    xhr.open('GET', 'data/page3.html');
+    updateViewPlace;
   }
 
   // xhr.open('GET', 'data/data.txt', true); // 비동기 통신
