@@ -35,8 +35,8 @@
   var result_view = document.querySelector('.ajax-result');
   var call_ajax_btn = document.querySelector('.call-ajax-data-btn');
   var page1 = document.querySelector('.page1')
-  var page1 = document.querySelector('.page2')
-  var page1 = document.querySelector('.page3')
+  var page2 = document.querySelector('.page2')
+  var page3 = document.querySelector('.page3')
   call_ajax_btn.onclick = updateViewPlace;
 
   // 통신 상태 확인
