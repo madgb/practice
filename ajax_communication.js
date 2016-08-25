@@ -27,13 +27,22 @@
   // 동기 통신일 경우는.... 데이터가 로드될 때까지 기다림...
   // 비동기 통신일 경우는.... 아래 코드가 바로 해석됨...
 
+  var result_view = document.querySelector('.ajax-result');
+  var call_ajax_btn = document.querySelector('.call-ajax-data-btn');
+
+  function updateViewPlace() {
+    result_view.textContent = xhr.response;
+  }
+
   // 통신 상태 확인
   if ( xhr.status === 200 ) {
     console.log('통신 데이터 전송 성공! ^ㄴ^');
     // console.log(xhr.response);
-    document.querySelector('.ajax-result').textContent = xhr.response;
+    call_ajax_btn.onclick = updateViewPlace;
   } else {
     console.log('통신 데이터 전송 실패! ㅠ_ㅠ');
+    result_view.textContent = '데이터 로드에 실패했습니다....';
+    console.log(xhr);
   }
 
 })(this, this.XMLHttpRequest);
