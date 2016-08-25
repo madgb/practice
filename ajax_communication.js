@@ -49,10 +49,6 @@
   //   console.log(xhr);
   // }
 
-  var page1ed = page1.onclick;
-  var page2ed = page2.onclick;
-  var page3ed = page3.onclick;
-
   // var pageOnclick = 
   // switch (pageOnclick) {
   //   case "page1ed":
@@ -69,13 +65,13 @@
   //     break;
   // }
 
-  if (page1ed){
+  if (page1.onclick){
     xhr.open('GET', 'data/page1.html');
     updateViewPlace;
-  } else if (page2ed) {
+  } else if (page2.onclick) {
     xhr.open('GET', 'data/page2.html');
     updateViewPlace;
-  } else if (page3ed) {
+  } else if (page3.onclick) {
     xhr.open('GET', 'data/page3.html');
     updateViewPlace;
   }
