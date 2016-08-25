@@ -39,7 +39,7 @@
   var page3 = document.querySelector('.page3');
 
   // call_ajax_btn.onclick = updateViewPlace;
-  switch (pages) {
+  switch () {
     case page1.onclick:
       xhr.open('GET', 'data/data.html');
       return updateViewPlace;
@@ -55,7 +55,6 @@
     default:
       xhr.open('GET', 'data/data.html');
       return updateViewPlace;
-      break;
   }
   // page1.onclick = updateViewPlace;
 
