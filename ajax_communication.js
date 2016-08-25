@@ -49,9 +49,9 @@
   //   console.log(xhr);
   // }
 
-  var page1.onclick = page1ed
-  var page2.onclick = page2ed
-  var page3.onclick = page3ed
+  var page1ed = page1.onclick;
+  var page2ed = page2.onclick;
+  var page3ed = page3.onclick;
 
   // var pageOnclick = 
   // switch (pageOnclick) {
