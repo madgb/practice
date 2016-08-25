@@ -49,19 +49,23 @@
   //   console.log(xhr);
   // }
 
+  var page1.onclick = page1ed
+  var page2.onclick = page2ed
+  var page3.onclick = page3ed
+
   var pageOnclick = page.onclick;
   switch (pageOnclick) {
-    case "page1.onclick":
+    case "page1ed":
       xhr.open('GET', 'data/page1.html');
       break;
-    case "page2.onclick":
+    case "page2ed":
       xhr.open('GET', 'data/page2.html');
       break;
-    case "page3.onclick":
+    case "page3ed":
       xhr.open('GET', 'data/page3.html');
       break;
   }
-  
+
   pageOnclick = updateViewPlace;
 
   // xhr.open('GET', 'data/data.txt', true); // 비동기 통신
