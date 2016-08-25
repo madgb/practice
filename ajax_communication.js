@@ -49,7 +49,7 @@
   //   console.log(xhr);
   // }
 
-  var pageOnclick = page1.onclick = updateViewPlace;
+  var pageOnclick = page1.onclick;
   switch (pageOnclick) {
     case "page1.onclick":
       xhr.open('GET', 'data/page1.html');
@@ -64,6 +64,8 @@
       updateViewPlace;
       break;
   }
+
+  page1.onclick = updateViewPlace;
 
   // xhr.open('GET', 'data/data.txt', true); // 비동기 통신
   // xhr.open('GET', 'data/data.html'); // 비동기 통신
