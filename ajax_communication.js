@@ -34,8 +34,12 @@
 
   var result_view = document.querySelector('.ajax-result');
   var call_ajax_btn = document.querySelector('.call-ajax-data-btn');
+  var page1 = document.querySelector('.page1');
+  var page2 = document.querySelector('.page2');
+  var page3 = document.querySelector('.page3');
 
-  call_ajax_btn.onclick = updateViewPlace;
+  // call_ajax_btn.onclick = updateViewPlace;
+  page1.onclick = updateViewPlace;
 
   // 통신 상태 확인
   // if ( xhr.status === 200 ) {
@@ -58,7 +62,7 @@
     if ( this.status === 200 && this.readyState === 4 ) {
       console.log('통신 데이터 전송 성공! ^ㄴ^');
       // result_view.textContent = '[' + this.statusText + '] ' + this.responseText;
-      result_view.innerHTML = this.responseText;
+      page1.innerHTML = this.responseText;
     } else {
       console.log('통신 데이터 전송 실패! ㅠ_ㅠ');
       result_view.textContent = '[' + this.statusText + '] ' + '데이터 로드에 실패했습니다....';
