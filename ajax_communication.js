@@ -49,22 +49,20 @@
   //   console.log(xhr);
   // }
 
-  var pageOnclick = page1.onclick;
+  var pageOnclick = page.onclick;
   switch (pageOnclick) {
     case "page1.onclick":
       xhr.open('GET', 'data/page1.html');
-      page1.onclick = updateViewPlace;
       break;
     case "page2.onclick":
       xhr.open('GET', 'data/page2.html');
-      page2.onclick = updateViewPlace;
       break;
     case "page3.onclick":
       xhr.open('GET', 'data/page3.html');
-      page3.onclick = updateViewPlace;
       break;
   }
-
+  
+  pageOnclick = updateViewPlace;
 
   // xhr.open('GET', 'data/data.txt', true); // 비동기 통신
   // xhr.open('GET', 'data/data.html'); // 비동기 통신
