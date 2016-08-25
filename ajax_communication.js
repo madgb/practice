@@ -64,20 +64,16 @@
   //     updateViewPlace;
   //     break;
   // }
-  var i = 0;
-  page1.onclick && i = 1 === true;
-  page2.onclick && i = 2 === true;
-  page3.onclick && i = 3 === true;
 
-  if (i = 1){
+  if (page1.onclick){
     xhr.open('GET', 'data/page1.html');
-    return updateViewPlace;
-  } else if (i = 2) {
+    updateViewPlace;
+  } else if (page2.onclick) {
     xhr.open('GET', 'data/page2.html');
-    return updateViewPlace;
-  } else if (i = 3) {
+    updateViewPlace;
+  } else if (page3.onclick) {
     xhr.open('GET', 'data/page3.html');
-    return updateViewPlace;
+    updateViewPlace;
   }
 
   // xhr.open('GET', 'data/data.txt', true); // 비동기 통신
@@ -106,3 +102,4 @@
 
 
 })(this, this.XMLHttpRequest);
+
