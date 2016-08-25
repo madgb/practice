@@ -53,20 +53,21 @@
   var page2.onclick = page2ed
   var page3.onclick = page3ed
 
-  var pageOnclick = page.onclick;
+  var pageOnclick
   switch (pageOnclick) {
     case "page1ed":
       xhr.open('GET', 'data/page1.html');
+      updateViewPlace;
       break;
     case "page2ed":
       xhr.open('GET', 'data/page2.html');
+      updateViewPlace;
       break;
     case "page3ed":
       xhr.open('GET', 'data/page3.html');
+      updateViewPlace;
       break;
   }
-
-  pageOnclick = updateViewPlace;
 
   // xhr.open('GET', 'data/data.txt', true); // 비동기 통신
   // xhr.open('GET', 'data/data.html'); // 비동기 통신
