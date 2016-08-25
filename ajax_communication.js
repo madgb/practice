@@ -64,14 +64,18 @@
   //     updateViewPlace;
   //     break;
   // }
+  var i = 0;
+  page1.onclick && i = 1 === true;
+  page2.onclick && i = 2 === true;
+  page3.onclick && i = 3 === true;
 
-  if (page1.onclick){
+  if (i = 1){
     xhr.open('GET', 'data/page1.html');
     return updateViewPlace;
-  } else if (page2.onclick) {
+  } else if (i = 2) {
     xhr.open('GET', 'data/page2.html');
     return updateViewPlace;
-  } else if (page3.onclick) {
+  } else if (i = 3) {
     xhr.open('GET', 'data/page3.html');
     return updateViewPlace;
   }
