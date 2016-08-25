@@ -34,29 +34,10 @@
 
   var result_view = document.querySelector('.ajax-result');
   var call_ajax_btn = document.querySelector('.call-ajax-data-btn');
-  var page1 = document.querySelector('.page1');
-  var page2 = document.querySelector('.page2');
-  var page3 = document.querySelector('.page3');
-
-  // call_ajax_btn.onclick = updateViewPlace;
-  switch () {
-    case page1.onclick:
-      xhr.open('GET', 'data/data.html');
-      return updateViewPlace;
-      break;
-    case page2.onclick:
-      xhr.open('GET', 'data/page2.html');
-      return updateViewPlace;
-      break;
-    case page3.onclick:
-      xhr.open('GET', 'data/page3.html');
-      return updateViewPlace;
-      break;
-    default:
-      xhr.open('GET', 'data/data.html');
-      return updateViewPlace;
-  }
-  // page1.onclick = updateViewPlace;
+  var page1 = document.querySelector('.page1')
+  var page1 = document.querySelector('.page2')
+  var page1 = document.querySelector('.page3')
+  call_ajax_btn.onclick = updateViewPlace;
 
   // 통신 상태 확인
   // if ( xhr.status === 200 ) {
@@ -68,7 +49,21 @@
   //   result_view.textContent = '데이터 로드에 실패했습니다....';
   //   console.log(xhr);
   // }
-
+  var pageOnclick = page.onclick 
+  switch (pageOnclick) {
+    case "page1.onclick":
+      xhr.open('GET', 'data/data.html');
+      return updateViewPlace;
+      break;
+    case "page2.onclick":
+      xhr.open('GET', 'data/page2.html');
+      return updateViewPlace;
+      break;
+    case "page3.onclick":
+      xhr.open('GET', 'data/page3.html');
+      return updateViewPlace;
+      break;
+  }
   // xhr.open('GET', 'data/data.txt', true); // 비동기 통신
   // xhr.open('GET', 'data/data.html'); // 비동기 통신
   // xhr.open('GET', 'data/model.txt', false); // 동기 통신
@@ -80,11 +75,8 @@
       console.log('통신 데이터 전송 성공! ^ㄴ^');
       // result_view.textContent = '[' + this.statusText + '] ' + this.responseText;
       result_view.innerHTML = this.responseText;
-    } else {
-      console.log('통신 데이터 전송 실패! ㅠ_ㅠ');
-      result_view.textContent = '[' + this.statusText + '] ' + '데이터 로드에 실패했습니다....';
     }
-    console.log(xhr);
+    // console.log(xhr);
   }
 
   function updateViewPlace() {
