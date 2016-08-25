@@ -49,7 +49,7 @@
   //   result_view.textContent = '데이터 로드에 실패했습니다....';
   //   console.log(xhr);
   // }
-  var pageOnclick = page.onclick 
+  var pageOnclick = page1.onclick 
   switch (pageOnclick) {
     case "page1.onclick":
       xhr.open('GET', 'data/data.html');
