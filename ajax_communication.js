@@ -55,6 +55,8 @@
   // xhr.open('GET', 'data/data.txt', true); // 비동기 통신
   xhr.open('GET', 'data/data.html'); // 비동기 통신
   // xhr.open('GET', 'data/model.txt', false); // 동기 통신
+  xhr.open('GET', 'data/page2.html');
+  xhr.open('GET', 'data/page3.html');
 
   // 비동기 통신 객체에 이벤트 핸들러 바인딩
   xhr.onreadystatechange = function() {
