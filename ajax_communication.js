@@ -39,7 +39,25 @@
   var page3 = document.querySelector('.page3');
 
   // call_ajax_btn.onclick = updateViewPlace;
-  page1.onclick = updateViewPlace;
+  switch (pages) {
+    case page1.onclick:
+      xhr.open('GET', 'data/data.html');
+      return updateViewPlace;
+      break;
+    case page2.onclick:
+      xhr.open('GET', 'data/page2.html');
+      return updateViewPlace;
+      break;
+    case page3.onclick:
+      xhr.open('GET', 'data/page3.html');
+      return updateViewPlace;
+      break;
+    default:
+      xhr.open('GET', 'data/data.html');
+      return updateViewPlace;
+      break;
+  }
+  // page1.onclick = updateViewPlace;
 
   // 통신 상태 확인
   // if ( xhr.status === 200 ) {
@@ -53,10 +71,8 @@
   // }
 
   // xhr.open('GET', 'data/data.txt', true); // 비동기 통신
-  xhr.open('GET', 'data/data.html'); // 비동기 통신
+  // xhr.open('GET', 'data/data.html'); // 비동기 통신
   // xhr.open('GET', 'data/model.txt', false); // 동기 통신
-  xhr.open('GET', 'data/page2.html');
-  xhr.open('GET', 'data/page3.html');
 
   // 비동기 통신 객체에 이벤트 핸들러 바인딩
   xhr.onreadystatechange = function() {
