@@ -1,0 +1,61 @@
+/*기본 css 설정*/
+
+body{
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*header css*/
+
+header{
+	position: relative;
+}
+
+.logo_img img{
+	width: 80px;
+    margin: 20px;
+}
+.nav_gb{
+	float: right;
+}
+
+ul{
+	width: 270px;
+    position: absolute;
+    top: 0;	
+    right: 0;
+}
+
+ul a {
+	float: left;
+    padding: 16px;
+}
+
+li{
+	list-style: none;
+	color: black;
+}
+
+/*main css*/
+
+main{
+	width: 100%;
+}
+
+.main_logo{
+	text-align: center;
+}
+
+main img{
+	margin: 120px 0;
+	transition: 0.2s ease;
+}
+
+main img:hover{
+	transform: scale(1.1);
+}
