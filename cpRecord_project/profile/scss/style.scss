@@ -19,6 +19,12 @@ $colors: #E89B35 #36CBE9 #A137E7 #E83568;
 
 h1, h2, h3, h4, h5, h6, p {  font-family: inherit; }
 
+.crew_h1{
+  font-family: sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
 a {
   color: rgba(0,0,0,0.4);
   transition: color 0.35s ease-in-out;

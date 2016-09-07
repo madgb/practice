@@ -16,6 +16,8 @@ header{
 	position: relative;
 }
 
+h1, h2, h3, h4, h5, h6{text-align: center;}
+
 .logo_img img{
 	width: 80px;
     margin: 20px;
@@ -62,23 +64,13 @@ main{
 }
 
 .main_logo_img{
-	margin: 120px 0;
+	margin: 3em;
 	transition: 0.2s ease;
+	width: 40%;
 }
 
 .main_logo_img:hover{
 	transform: scale(1.1);
-}
-
-.main_logo img{
-	width: 50%;
-}
-
-.crew_h1{
-	text-align: center;
-	width: 100%;
-	position: absolute;
-    top: 0;
 }
 
 .copyright{

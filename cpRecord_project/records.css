@@ -1,0 +1,20 @@
+.record_cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.record_card{
+	border: 20px solid #5461DD;
+	border-radius: 20px;
+    width: 45em;
+    height: 30em;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.youtube{
+    width: 45em;
+    height: 30em;
+}
