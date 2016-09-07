@@ -3,17 +3,17 @@
 @import "icon";
 $colors: #E89B35 #36CBE9 #A137E7 #E83568;
 
-main {
+.crew_main {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   @media only screen and (max-width: 768px) {
-     width: 18rem;
-      .top1{margin-top: 610*1px;}
-      .top2{margin-top: 610*2px;}
-      .top3{margin-top: 610*3px;}
-      .top4{margin-top: 610*4px;}
-      .top5{margin-top: 610*5px;}
-      main{height: 2000px;}
+     width: 100%;
+     height: 2250px;
+      .top1{margin-top: 250px;}
+      .top2{margin-top: 250+550px;}
+      .top3{margin-top: 250+550*2px;}
+      .top4{margin-top: 250+550*3px;}
+      .top5{margin-top: 250+550*4px;}
   }
 }
 
