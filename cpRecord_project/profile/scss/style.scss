@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600,200,300,900);
-
+@import "panel";
+@import "icon";
 $colors: #E89B35 #36CBE9 #A137E7 #E83568;
 
-body {
+main {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
@@ -15,15 +16,18 @@ a {
   &:hover { color: #00a7c9; }
 }
 
-.top1{margin-top: 0px;}
-.top2{margin-top: 350*1px;}
-.top3{margin-top: 400*2px;}
-.top4{margin-top: 400*3px;}
-.top5{margin-top: 400*4px;}
+
+h1{text-align: center;}
+
+.top1{margin-top: 310*1px;}
+.top2{margin-top: 310*2px;}
+.top3{margin-top: 310*3px;}
+.top4{margin-top: 310*4px;}
+.top5{margin-top: 310*5px;}
 
 .card {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   
