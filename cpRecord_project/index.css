@@ -57,13 +57,17 @@ main{
 	text-align: center;
 }
 
-main .main_logo_img{
+.main_logo_img{
 	margin: 120px 0;
 	transition: 0.2s ease;
 }
 
-main .main_logo_img:hover{
+.main_logo_img:hover{
 	transform: scale(1.1);
+}
+
+.main_logo img{
+	width: 50%;
 }
 
 .crew_h1{
