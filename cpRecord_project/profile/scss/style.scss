@@ -6,6 +6,15 @@ $colors: #E89B35 #36CBE9 #A137E7 #E83568;
 main {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+  @media only screen and (max-width: 768px) {
+     width: 18rem;
+      .top1{margin-top: 310*1px;}
+      .top2{margin-top: 610*2px;}
+      .top3{margin-top: 610*3px;}
+      .top4{margin-top: 610*4px;}
+      .top5{margin-top: 610*5px;}
+      main{height: 2000px;}
+  }
 }
 
 h1, h2, h3, h4, h5, h6, p {  font-family: inherit; }
@@ -15,6 +24,8 @@ a {
   transition: color 0.35s ease-in-out;
   &:hover { color: #00a7c9; }
 }
+
+
 
 
 h1{text-align: center;}
@@ -33,12 +44,7 @@ h1{text-align: center;}
   
   @media only screen and (max-width: 768px) {
      width: 18rem;
-      .top1{margin-top: 310*1px;}
-      .top2{margin-top: 610*2px;}
-      .top3{margin-top: 610*3px;}
-      .top4{margin-top: 610*4px;}
-      .top5{margin-top: 610*5px;}
-      main{height: 2000px;}
+
   }
  
   
