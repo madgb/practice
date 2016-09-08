@@ -18,10 +18,37 @@ header{
 
 h1, h2, h3, h4, h5, h6{text-align: center;}
 
+.logo.img{
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
 .logo_img img{
 	width: 80px;
     margin: 20px;
+    overflow: hidden;
 }
+
+.logo_img::before{
+	content: 'CPRmusiq_Project';
+	position: absolute;
+	top: 51px;
+    font-family: monospace;
+    transition: 0.3s ease;
+    color: transparent;
+}
+
+.logo_img:hover::before{
+	display: inline-block;
+	transform: translateX(112px);
+	color: #000;
+}
+@media only screen and (max-width: 768px){
+	.logo_img::before, .logo_img:hover::before{
+		display: none;
+	}
+}
+
 .nav_gb{
 	float: right;
 }
@@ -52,11 +79,6 @@ h1, h2, h3, h4, h5, h6{text-align: center;}
 
 main{
 	width: 100%;
-}
-
-.crew_main{
-	width: 100%;
-	height: 1400px;
 }
 
 .main_logo{
