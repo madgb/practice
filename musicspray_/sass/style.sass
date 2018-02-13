@@ -1,0 +1,56 @@
+@import "common"
+@import "component"
+@import "popup"
+
+ul, ol, li
+  list-style: none
+
+a
+  cursor: pointer
+  color: inherit !important
+  text-decoration: inherit
+
+p
+  margin: 0 !important
+
+.wrapper
+  padding: 30px
+
+/*헤드 네비게이션
+
+.gb-nav
+  border-top: 1px solid #D0D1D3
+  height: 50px
+  ul
+    float: right
+  li
+    float: left
+    font-size: 12px
+    margin: 5px 0 0 25px
+    color: #7D7E7F
+    position: relative
+
+.nav1::after, .nav2::after, .nav3::after, .nav4::after
+  content: ''
+  display: block
+  position: absolute
+  bottom: 21px
+  opacity: 0
+  width: 100%
+
+.nav1::after
+  width: 180%
+  left: -42%
+  border-top: 4px solid #5A8C93
+
+.nav2::after
+  border-top: 4px solid #70C5D2
+
+.nav3::after
+  border-top: 4px solid #E46E3F
+
+.nav4::after
+  border-top: 4px solid #AEDA1D
+
+.nav1:hover::after, .nav2:hover::after, .nav3:hover::after, .nav4:hover::after
+  opacity: 100

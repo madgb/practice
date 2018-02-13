@@ -1,0 +1,102 @@
+html *{
+	box-sizing: border-box;
+}
+
+main{
+	position: relative;
+}
+
+/*ì‹¤íŒ¨..*/
+.container.show_grid{
+	background: url(layer.png) repeat;
+	z-index: 10002
+
+}
+
+/*ì‹¤íŒ¨..*/
+body:hover.show_grid{
+	background: none;
+	z-index: 10000;
+}
+
+.nav_gb{
+	float: right;
+	margin-right: 20px;
+	position: relative;
+	top: -52px;
+}
+.nav_gb > .nav{
+	float: left;
+    
+    background-color: #480701;
+/*    position: relative;
+    top: -57px;
+    right: -31px;*/
+}
+
+footer > .footer{
+	float: left;
+	border: 3px solid black;
+}
+
+footer > .add1{
+	margin-left: 20px;
+	background-color: #7B85FF;
+}
+footer > .add1:hover{
+	background: url(drink_respondibly.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header > .logo{
+	background-color: #0B3035;
+	position: relative;
+	top: -4px;
+	/* display: table; */
+	/* vertical-align: middle; */
+}
+
+main > .news{
+	background-color: #FFFE3E;
+	border: 3px solid;
+	color: black;
+}
+
+main > .news:hover{
+	background-color: #A6A62C
+}
+
+main > .sub{
+	margin-left: 910px;
+	position: absolute;
+}
+
+main >.sub1{
+	bottom: 504px;
+}
+main > .sub2{
+	bottom: 240px;
+}
+main > .sub3{
+	bottom: -24px;
+}
+.play_button{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #FF7D11;
+	position: absolute;
+	top: 35%;
+	left: 37%;
+}
+.play_button::after{
+  content:'';
+  border-right: none;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 23px solid white;
+  position: absolute;
+  top:20px;
+  left:27px;
+}
